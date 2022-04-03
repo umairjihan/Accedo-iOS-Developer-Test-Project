@@ -170,6 +170,8 @@
 		C43974B227FA0BA300E27AE9 /* FetchMoviesUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchMoviesUseCaseTests.swift; sourceTree = "<group>"; };
 		C43974B627FA14DD00E27AE9 /* GenreListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreListViewModelTests.swift; sourceTree = "<group>"; };
 		C43974B827FA201D00E27AE9 /* MovieListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModelTests.swift; sourceTree = "<group>"; };
+		C43974BB27FA61A000E27AE9 /* Accedo-iOS-Developer-Test-Project-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Accedo-iOS-Developer-Test-Project-Info.plist"; sourceTree = SOURCE_ROOT; };
+		C43974BC27FA620800E27AE9 /* Accedo-iOS-Developer-Test-Project-tvOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Accedo-iOS-Developer-Test-Project-tvOS-Info.plist"; sourceTree = SOURCE_ROOT; };
 		C45BB2E527F600F600646E92 /* Accedo iOS Developer Test Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Accedo iOS Developer Test Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45BB2E827F600F600646E92 /* Accedo_iOS_Developer_Test_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Accedo_iOS_Developer_Test_ProjectApp.swift; sourceTree = "<group>"; };
 		C45BB2EA27F600F600646E92 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -470,6 +472,7 @@
 		C45BB2E727F600F600646E92 /* Accedo iOS Developer Test Project */ = {
 			isa = PBXGroup;
 			children = (
+				C43974BB27FA61A000E27AE9 /* Accedo-iOS-Developer-Test-Project-Info.plist */,
 				C45BB31A27F60B0900646E92 /* Domain */,
 				C45BB31B27F60B0D00646E92 /* Data */,
 				C45BB31927F60B0500646E92 /* Presentation */,
@@ -627,6 +630,7 @@
 		C4A57E4F27F90E5400E53F0C /* Accedo iOS Developer Test Project tvOS */ = {
 			isa = PBXGroup;
 			children = (
+				C43974BC27FA620800E27AE9 /* Accedo-iOS-Developer-Test-Project-tvOS-Info.plist */,
 				C4A57E5027F90E5400E53F0C /* Accedo_iOS_Developer_Test_Project_tvOSApp.swift */,
 				C4A57E5227F90E5400E53F0C /* ContentView.swift */,
 				C4A57E5427F90E5700E53F0C /* Assets.xcassets */,
@@ -1396,6 +1400,7 @@
 				DEVELOPMENT_TEAM = QAQNH4S28N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Accedo-iOS-Developer-Test-Project-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1426,6 +1431,7 @@
 				DEVELOPMENT_TEAM = QAQNH4S28N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Accedo-iOS-Developer-Test-Project-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1536,6 +1542,7 @@
 				DEVELOPMENT_TEAM = QAQNH4S28N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Accedo-iOS-Developer-Test-Project-tvOS-Info.plist";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1565,6 +1572,7 @@
 				DEVELOPMENT_TEAM = QAQNH4S28N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Accedo-iOS-Developer-Test-Project-tvOS-Info.plist";
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
 				LD_RUNPATH_SEARCH_PATHS = (

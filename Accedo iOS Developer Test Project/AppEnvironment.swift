@@ -13,7 +13,7 @@ public class AppEnvironment {
   
         let appSchema = Bundle.main.infoDictionary?["App Environment"] as? String
         switch appSchema {
-        case ".test":
+        case ".dev":
             return .dev
         default:// Release
             return .prod
