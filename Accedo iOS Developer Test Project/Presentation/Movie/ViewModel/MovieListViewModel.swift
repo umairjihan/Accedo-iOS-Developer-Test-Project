@@ -29,7 +29,8 @@ class MovieListViewModel: MovieListViewModelOutput, MovieListViewModelInput, Mov
     private var observer: AnyCancellable? = nil
     
     var page: Int
-    var isLoading: Bool = false
+    
+    private var isLoading: Bool = false
     
     private var totalPages: Int = 0
     
@@ -50,13 +51,15 @@ class MovieListViewModel: MovieListViewModelOutput, MovieListViewModelInput, Mov
     }
     
     func fetchMovies(){
-        self.observer = self.usecase.start().sink ( receiveCompletion:{  completion in
+        self.isLoading = true
+        self.observer = self.usecase.start().sink (  receiveCompletion:{  [weak self] completion in
             switch completion {
             case .finished:
                 print("Finished calling")
             case .failure(let error):
                 print("Error calling \(error)")
             }
+            self?.isLoading = false
         }, receiveValue: { [weak self] response in
             guard let `self` = self, let movies = response as? MovieList else { return }
             let items = movies.results.map { movie in
@@ -71,13 +74,15 @@ class MovieListViewModel: MovieListViewModelOutput, MovieListViewModelInput, Mov
     
     func didLoadNextPage() {
         self.usecase.page = self.page + 1
-        self.observer = self.usecase.start().sink ( receiveCompletion:{  completion in
+        self.isLoading = true
+        self.observer = self.usecase.start().sink ( receiveCompletion:{  [weak self] completion in
             switch completion {
             case .finished:
                 print("Finished calling")
             case .failure(let error):
                 print("Error calling \(error)")
             }
+            self?.isLoading = false
         }, receiveValue: { [weak self] response in
             guard let `self` = self, let movies = response as? MovieList else { return }
             let items = movies.results.map { movie in

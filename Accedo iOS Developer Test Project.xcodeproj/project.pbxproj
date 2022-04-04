@@ -538,6 +538,7 @@
 			children = (
 				C41D283427F632FB00413F8F /* UseCase */,
 				C41D283127F6320300413F8F /* Repository */,
+				C48062DC27F618620053EA2B /* Models */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -547,7 +548,6 @@
 			children = (
 				C41D281B27F61ED800413F8F /* DataSource */,
 				C41D282327F6251800413F8F /* Repository */,
-				C48062DC27F618620053EA2B /* Models */,
 				C41D282627F629BB00413F8F /* Remote */,
 			);
 			path = Data;
